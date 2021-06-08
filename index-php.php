@@ -25,9 +25,10 @@
       <?php foreach ($discs as $disc) { ?>
         <div class="box-album">
         
-          <img src="<?php echo $disc['poster'] ?>" 
+          <img src="<?php echo $disc['poster'] ?>"
             alt="<?php echo $disc['title'] ?>"
           >
+      
   
           <h2> <?php echo $disc['title'] ?> </h2>
           <h5> <?php echo $disc['author'] ?> </h5>
