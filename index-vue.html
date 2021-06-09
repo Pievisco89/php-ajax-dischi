@@ -14,6 +14,17 @@
     
     <header>
       <img src="img/spotify-logo.png" alt="logo">
+
+      <select 
+        @change="callAPI" 
+        v-model="allGenres"
+      >
+        <option value="all">Seleziona un genere</option>
+        <option 
+          v-for="genre in arrGenres"
+          :value="genre"
+        > {{ genre }} </option>
+      </select>
     </header>
   
     <main>

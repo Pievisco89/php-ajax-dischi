@@ -17,6 +17,12 @@
   
   <header>
     <img src="img/spotify-logo.png" alt="logo">
+
+    <select name="Seleziona un genere" id="">
+      <option value="rock">Rock</option>
+      <option value="rock">Pop</option>
+      <option value="rock">Jazz</option>
+    </select>
   </header>
 
   <main>

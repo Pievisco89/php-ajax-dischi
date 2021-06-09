@@ -4,14 +4,25 @@
   box-sizing: border-box;
 }
 
+/* Header */
 header{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   height: 70px;
+  width: 100%;
   background-color: #2E3A46;
 }
 
 header img{
   width: 45px;
-  margin: 0.7rem;
+  margin-left: 1rem;
+}
+
+header select{
+  padding: 0.2rem 2rem;
+  margin-right: 1rem;
+  text-align: center;
 }
 
 /* Main */
@@ -63,7 +74,8 @@ h5,
 h6{
   color: #7d7977;
   cursor: pointer;
-  margin-top: 0.4rem;
+  margin-top: 0.6rem;
+  font-size: 0.9rem;
 }
 h5:hover,
 h6:hover{
