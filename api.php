@@ -13,9 +13,22 @@
     }
   }
 
+  //riempio l'array albums con gli elementi relativi al genere che ho selezionato
+  if(count($albums) === 0){ //passo qualcosa che non è all
+
+    foreach($discs as $disc){
+      //pusho in album l'elemento che ha lo stesso genere cliccato
+      if($disc['genre'] === $_GET['genre']){
+        $albums[] = $disc;
+      }
+
+    }
+
+  }
+
 
   $response = [
-    'albums' => $discs,
+    'albums' => $albums,
     'genres' => $genres,
   ];
 
