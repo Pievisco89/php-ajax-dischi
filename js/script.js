@@ -5,6 +5,7 @@ const app = new Vue({
   data:{
     arrDiscs: [],
     arrGenres: [],
+    arrYears:[],
     allGenres: 'all',
     apiURL: 'http://localhost/php-esercitazioni/php-ajax-dischi/api.php'
   },
@@ -18,8 +19,10 @@ const app = new Vue({
       .then(resp =>{
         this.arrDiscs = resp.data.albums;
         this.arrGenres = resp.data.genres;
+        this.arrYears = resp.data.years;
         console.log(this.arrDiscs);
         console.log(this.arrGenres);
+        console.log(this.arrYears);
       })
       .catch(err => {
         console.log(err);

@@ -20,7 +20,7 @@
     if(!in_array($disc['year'],$years)){
       $years[] = $disc['year'];
     }
-    asort($years);
+    asort($years);//per ordine crescente
   }
 
 
