@@ -15,7 +15,6 @@
     }
   }
 
-
   foreach($discs as $disc){
   //se nell'array years non è presente l'anno allora lo pusho dentro 
     if(!in_array($disc['year'],$years)){
