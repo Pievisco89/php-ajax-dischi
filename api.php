@@ -5,6 +5,7 @@
   $genres = [];
   //operatore ternario: se la mia chiamata Get di genere è vuota o se è uguale a all allora albums=discs sennò è un array vuoto nel quale verranno pushati i vari generi
   $albums = empty($_GET['genre']) || $_GET['genre'] === 'all' ? $discs : []; 
+  asort($albums);
 
   foreach($discs as $disc){
   //se nell'array non è presente il genre allora lo pusho dentro all'array genres
@@ -26,6 +27,10 @@
 
   }
 
+  //per stampare in ordine crescente gli album
+  /* foreach($albums as $key => $valuevalue) { 
+    echo $value
+  } */
 
   $response = [
     'albums' => $albums,
